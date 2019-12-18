@@ -32,7 +32,6 @@ const MainCover = (props) => {
     const [downloads, setDownloads] = useState('');
 
     
-    // const [loaded, setIsLoaded] = useState(false);
 
     React.useEffect(() => {
         fetchImages();
@@ -53,10 +52,7 @@ const MainCover = (props) => {
       };
 
     const handleSubmit = (e, count=15) =>{
-        // console.log(searchText);
-        // e.preventDefault();
         
-        // let props.searchText;
 
 
         
@@ -161,12 +157,7 @@ const MainCover = (props) => {
                 </form>
             </div>
             </div>
-            {/* <InfiniteScroll
-                pageStart={0}
-                loadMore={fetchImages }
-                hasMore={true}
-                loader={<div className="loader" >Loading ...</div>}
-            > */}
+            
                 <div className="container" >
                     <div className={classes.cursor}>
                         <div className={classes.col34}>
@@ -281,7 +272,7 @@ const MainCover = (props) => {
 
                 
                 
-            {/* </InfiniteScroll> */}
+           
 
             
         </div>
