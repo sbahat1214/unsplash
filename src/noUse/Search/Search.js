@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import ImagesList from '../ImagesList/ImagesList';
-import CountHandler from '../countHandler/countHandler';
+import CountHandler from '../../components/countHandler/countHandler';
 
 class Search extends Component {
     state={
@@ -13,6 +13,7 @@ class Search extends Component {
     termChange = (e) => {
         this.setState({term: e.target.value} );
     }
+    
      submitTerm = (e) => {
         const {term} = this.state;
         const client_ID = "de9303375d7a484e5fff76d8f86bd5057fecc7601fa9836ecd37fe28f6b5e3fc";
